@@ -1,0 +1,74 @@
+2017-05-06 08:47:21 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'reviewme.itemsreviews_reviewees' doesn't exist
+Stack Trace:
+#0 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'itemsreviews_re...', Array, Object(Cake\Database\Schema\Table))
+#1 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('itemsreviews_re...', Array)
+#2 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\Database\Schema\CachedCollection->describe('itemsreviews_re...')
+#3 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\ORM\Table.php(518): Cake\ORM\Table->schema()
+#4 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(215): Cake\ORM\Table->primaryKey()
+#5 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'itemsreviews_re...', 'ItemsreviewsRev...')
+#7 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('ItemsreviewsRev...')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('itemsreviews_re...')
+#9 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\Shell.php(472): call_user_func_array(Array, Array)
+#10 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\Shell.php(465): Cake\Console\Shell->runCommand(Array, false, Array)
+#11 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 D:\Projects\reviewme\trunk\reviewme\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2017-05-06 08:47:51 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'reviewme.itemsreviews_reviewers' doesn't exist
+Stack Trace:
+#0 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'itemsreviews_re...', Array, Object(Cake\Database\Schema\Table))
+#1 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('itemsreviews_re...', Array)
+#2 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\Database\Schema\CachedCollection->describe('itemsreviews_re...')
+#3 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\ORM\Table.php(518): Cake\ORM\Table->schema()
+#4 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(215): Cake\ORM\Table->primaryKey()
+#5 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'itemsreviews_re...', 'ItemsreviewsRev...')
+#7 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('ItemsreviewsRev...')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('itemsreviews_re...')
+#9 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\Shell.php(472): call_user_func_array(Array, Array)
+#10 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\Shell.php(465): Cake\Console\Shell->runCommand(Array, false, Array)
+#11 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 D:\Projects\reviewme\trunk\reviewme\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2017-06-02 05:00:58 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Model" could not be found.
+Exception Attributes: array (
+  'class' => 'Model',
+)
+Stack Trace:
+#0 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('Model')
+#1 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 D:\Projects\reviewme\trunk\reviewme\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2017-06-08 07:26:38 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'reviewme.orgainzationreviews' doesn't exist
+Stack Trace:
+#0 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'orgainzationrev...', Array, Object(Cake\Database\Schema\Table))
+#1 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('orgainzationrev...', Array)
+#2 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\Database\Schema\CachedCollection->describe('orgainzationrev...')
+#3 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\ORM\Table.php(518): Cake\ORM\Table->schema()
+#4 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(215): Cake\ORM\Table->primaryKey()
+#5 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'orgainzationrev...', 'Orgainzationrev...')
+#7 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Orgainzationrev...')
+#8 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Orgainzationrev...')
+#9 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(52): Bake\Shell\BakeShell->Bake\Shell\{closure}('Orgainzationrev...', 0)
+#10 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\bake\src\Shell\BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('orgainzationrev...')
+#12 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\Shell.php(458): call_user_func_array(Array, Array)
+#13 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\Projects\reviewme\trunk\reviewme\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\Projects\reviewme\trunk\reviewme\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
